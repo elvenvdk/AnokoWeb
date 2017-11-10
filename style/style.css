@@ -1,0 +1,104 @@
+.navbar {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.pageTop {
+    width: 100%;
+    margin: 0;
+    margin-top: -18px;
+    padding: 0;
+    flex-direction: 'column';
+}
+
+.nav_container {
+    width: 100%;
+}
+
+.nav-rightSide {
+    float: right;
+    padding-right: 5%;
+}
+
+.title-text {
+    color: rgb(250, 250, 250);
+    text-align: center;
+}
+
+.card-img-overlay {
+    margin-top: 70px;
+}
+
+.card-title {
+    font-size: 50px;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.thumbMenu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0% auto;
+    position: relative;
+}
+
+.thumbMenuContainer {
+    width: 640px; /*can be in percentage also.*/
+    height: auto;
+    margin: 0 auto;
+    padding-top: 10px;
+    position: relative;
+}
+
+.img-thumbnail {
+    width: 90%;
+}
+
+.menu-caption {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    text-align: center;
+    width: 100%;
+}
+.featured-header {
+    text-align: center;
+}
+.featured-header-text {
+    margin-top: -10px;
+    text-align: center;
+}
+
+.feat-partners > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.feat-partners > .row > .fPartners-col {
+    display: inline-block;
+    float: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
