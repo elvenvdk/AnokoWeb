@@ -78,13 +78,13 @@ img {
     text-align: center;
 }
 
-.feat-partners > .row {
+.featPartner > .row {
     overflow-x: auto;
     white-space: nowrap;
     background-color: gray;
 }
 
-.feat-partners > .row > .fPartners-col {
+.featPartner > .row > .fPartners-col {
     display: inline-block;
     float: none;
     background-color: lightgray;
