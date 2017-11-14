@@ -29,6 +29,7 @@ class Discover extends Component {
     state = { partner: '' };
     componentDidMount() {
         this.props.getDbPartners();
+        
     }
     renderFeatPartners () {
         const { partnerData, uid } = this.props;
@@ -36,17 +37,27 @@ class Discover extends Component {
             return key !== uid;
         }), (partner, key) => {
             return (
-                <div className="container featPartner" key={key}>
-                    <div className="row text-center">
-                        <div className="col-sm-4 md-3 fPartners-col">
-                            {partner.companyName} | {partner.companyType}
-                            <PreviewPicture pictureUrl={partner.picture} /> 
-                        </div>                           
-                    </div>
-                </div>
+                // <div className="container featPartner" key={key}>
+                //     <div className="row text-center">
+                //         <div className="col-sm-4 md-3 fPartners-col">
+                //             {partner.companyName} | {partner.companyType}
+                //             <PreviewPicture pictureUrl={partner.picture} /> 
+                //         </div>                           
+                //     </div>
+                // </div>
+                <Carousel key={key}>
+                    <Carousel.Item>
+                        <img width={900} height={500} alt="900x500" src={partner.picture} />
+                        <Carousel.Caption>
+                            <h3>{partner.companyName}</h3>
+                            <h4>{partner.companyType}</h4>
+                        </Carousel.Caption>
+                    </Carousel.Item> 
+                </Carousel>
             )
         })
     }
+
     render() {
         return (
             <div>

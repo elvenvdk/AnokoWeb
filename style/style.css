@@ -81,13 +81,14 @@ img {
 .feat-partners > .row {
     overflow-x: auto;
     white-space: nowrap;
+    background-color: gray;
 }
 
 .feat-partners > .row > .fPartners-col {
     display: inline-block;
     float: none;
+    background-color: lightgray;
 }
-
 
 
 
