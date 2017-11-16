@@ -8,6 +8,7 @@ import thunk from 'redux-thunk';
 
 import App from './containers/app';
 import PartnersNew from './containers/partners_new';
+import Discover from './containers/discover';
 import ListPartners from './containers/list_partners';
 import reducers from './reducers';
 
@@ -19,7 +20,7 @@ ReactDOM.render(
       <div>
         <Switch>
           <Route path="/partners/new" component={PartnersNew} />
-          <Route path="/discover" component={ListPartners} />
+          <Route path="/discover" component={Discover} />
           <Route path="/" component={App} />
         </Switch>
       </div>

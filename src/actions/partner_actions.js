@@ -61,7 +61,7 @@ export const createPartners = (data, picture) => {
         })
 }
 
-// partner logg-in status
+// partner log-in status
 export const getPartner = () => {
     return dispatch => {
         dispatch({
