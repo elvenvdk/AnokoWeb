@@ -29,7 +29,7 @@ class Discover extends Component {
     state = { partner: '' };
     componentDidMount() {
         this.props.getDbPartners();
-        
+
     }
     renderFeatPartners () {
         const { partnerData, uid } = this.props;
@@ -37,23 +37,23 @@ class Discover extends Component {
             return key !== uid;
         }), (partner, key) => {
             return (
+              /*
                 <div className="container featPartner" key={key}>
                     <div className="row text-center">
                         <div className="col-sm-4 md-3 fPartners-col">
                             {partner.companyName} | {partner.companyType}
-                            <PreviewPicture pictureUrl={partner.picture} /> 
-                        </div>                           
+                            <PreviewPicture pictureUrl={partner.picture} />
+                        </div>
                     </div>
                 </div>
-                // <Carousel key={key}>
-                //     <Carousel.Item>
-                //         <img width={900} height={500} alt="900x500" src={partner.picture} />
-                //         <Carousel.Caption>
-                //             <h3>{partner.companyName}</h3>
-                //             <h4>{partner.companyType}</h4>
-                //         </Carousel.Caption>
-                //     </Carousel.Item> 
-                // </Carousel>
+               */
+                  <Carousel.Item>
+                      <img width={900} height={500} alt="900x500" src={partner.picture} />
+                      <Carousel.Caption>
+                          <h3>{partner.companyName}</h3>
+                          <h4>{partner.companyType}</h4>
+                      </Carousel.Caption>
+                  </Carousel.Item>
             )
         })
     }
@@ -63,8 +63,8 @@ class Discover extends Component {
             <div>
                 <div>
                     <NavbarMain />
-                    <PageHeader 
-                        title="Discover" 
+                    <PageHeader
+                        title="Discover"
                         blurb="Anoko Partners and all they have to offer!"
                         backgroundImage={imgHeader}
                     />
@@ -77,15 +77,15 @@ class Discover extends Component {
                         thirdTitle="Music"
                     />
                 </div>
-                
+
                 <div className="container featured-container">
                     <div className="featured-header">
                         <h2 className="featured-header-text">Featured Partners</h2>
                     </div>
-                    <div className="featured carousel-container text-center">   
-                        <div>
+                    <div className="featured carousel-container text-center">
+                      <Carousel>
                             {this.renderFeatPartners()}
-                        </div>
+                      </Carousel>
                     </div>
                 </div>
             </div>
