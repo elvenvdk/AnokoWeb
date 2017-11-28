@@ -6,7 +6,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import promise from 'redux-promise';
 import thunk from 'redux-thunk';
 
-import App from './containers/app';
+import Landing from './containers/landing';
 import PartnersNew from './containers/partners_new';
 import Discover from './containers/discover';
 import ListPartners from './containers/list_partners';
@@ -21,7 +21,7 @@ ReactDOM.render(
         <Switch>
           <Route path="/partners/new" component={PartnersNew} />
           <Route path="/discover" component={Discover} />
-          <Route path="/" component={App} />
+          <Route path="/" component={Landing} />
         </Switch>
       </div>
     </BrowserRouter>

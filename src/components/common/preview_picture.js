@@ -17,15 +17,19 @@ export const PreviewPicture = props => {
 export const PreviewPictureMain = props => {
     const { pictureUrl, companyName, companyType } = props;
     return (
-        <div className="img-preview-main card bg-dark text-white">
-            <img
-                className="card-img picture-main" 
-                style={styles.pictureMain}
-                src={pictureUrl}
-            />
-            <div className="card-img-overlay">
-                <h3 className="title-text card-text">{companyName}</h3>
-                <p className="title-text card-text">{companyType}</p>
+        <div className="row preview-pic-row">
+            <div className="ol-sm-3 col-xs-3">
+                <div className="img-preview-main card text-white" style={styles.pictureMain}>
+                    <img
+                        className="card-img picture-main" 
+                        style={styles.pictureMain}
+                        src={pictureUrl}
+                    />
+                    <div className="card-img-overlay">
+                        <h3 className="title-text card-text">{companyName}</h3>
+                        <p className="title-text card-text">{companyType}</p>
+                    </div>
+                </div>
             </div>
         </div>
     )
@@ -34,7 +38,7 @@ export const PreviewPictureMain = props => {
 
 const styles = {
     pictureMain: {
-        width: 900,
-        height: 500
+        width: 1105,
+        height: 650
     }
 }

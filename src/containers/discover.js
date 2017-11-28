@@ -7,7 +7,7 @@ import {
     Carousel,
 } from 'react-bootstrap';
 
-import NavbarMain from '../components/common/navbar_main';
+import { NavbarMain } from '../components/common/navbar_main';
 import { PageHeader } from '../components/common/page_header';
 import { ThumbnailMenu } from '../components/thumbnail_menu';
 import ScreenSection from '../components/common/sreen_section';
@@ -19,12 +19,6 @@ import {
 import {
     getDbPartners,
 } from '../actions/partner_actions';
-import {
-    imgHeader,
-    imgArtThumb,
-    imgCulinaryThumb,
-    imgMusicThumb
-} from '../images';
 
 class Discover extends Component {
     state = { partner: '' };
@@ -38,7 +32,7 @@ class Discover extends Component {
             return key !== uid;
         }), (partner, key) => {
             return (
-                    <Carousel.Item>
+                    <Carousel.Item key={key}>
                         <img width={900} height={500} alt="900x500" src={partner.picture} />
                         <Carousel.Caption>
                             <h3>{partner.companyName}</h3>
@@ -55,7 +49,7 @@ class Discover extends Component {
             return key !== uid;
         }), (partner, key) => {
             return (
-                <div className="container mainPartner" key={key}>
+                <div className="mainPartner" key={key}>
                     <div className="row text-center">
                         <div className="Partners-col">
                             <PreviewPictureMain 
@@ -72,9 +66,22 @@ class Discover extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container main-container">
                 <div className="container top-container">
-                    <NavbarMain />
+                    <NavbarMain 
+                    labelL1="Filter Partners"
+                    linkL1Ref = "#"
+                    labelL2="Favorites"
+                    linkL2Ref="#"
+                    labelL3="Profile"
+                    linkL3Ref="#"
+                    labelR1="Events"
+                    linkR1Ref="#"
+                    labelR2="Discover"
+                    linkR2Ref="#"
+                    labelR3="Community"
+                    linkR3Ref="#"
+                    />
                     <PageHeader 
                         title="Discover" 
                         blurb="Anoko Partners and all they have to offer!"
@@ -90,20 +97,12 @@ class Discover extends Component {
                             {this.renderFeatPartners()}
                         </Carousel>
                     </div>
-                    <ThumbnailMenu
-                        artFilterImage={imgArtThumb}
-                        culinaryFilterImage={imgCulinaryThumb}
-                        musicFilterImage={imgMusicThumb}
-                        firstTitle="Art"
-                        secondTitle="Culinary"
-                        thirdTitle="Music"
-                    />
-                </div>
-                <div className="container partner-container">
-                    <div>
+                    
+                    <div className="container partner-container">
                         {this.renderPartners()}
                     </div>
                 </div>
+                
             </div>
         )
     }
