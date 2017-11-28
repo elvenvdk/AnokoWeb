@@ -25,7 +25,7 @@ class Landing extends Component {
               <Benefits />
             </div>
         </div>
-        <div className="container-fluid landings-partners-container">
+        <div className="container-fluid landings-partners-gallery-container">
           <Partners />
         </div>
       </LandingScreenSection>

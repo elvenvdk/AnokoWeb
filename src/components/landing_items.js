@@ -94,7 +94,7 @@ export const Benefits = () => {
 
 export const Partners = () => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid container-partnersImage-gallery">
             <div className="row container-partner-gallery">
                 <div className="col-lg-12">
                     <h2>Partners</h2>
