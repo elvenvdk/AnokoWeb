@@ -1,5 +1,18 @@
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.anoko-logo-img {
+    max-width: 100px;
+    max-height: 64px;
+    margin-top: -21px;
+}
+
 .navbar {
     width: 100%;
+    z-index: 999;
 }
 
 img {
@@ -105,7 +118,7 @@ img {
     /* flex-direction: column;
     justify-content: center;
     align-content: center; */
-    background: lightgrey;
+    background: #5D6061;
     /* width: 110%;
     padding-bottom: 30%;
     padding-top: 1%; */
@@ -135,6 +148,7 @@ img {
     height: 100%;
     overflow: hidden;
     opacity: 0.5;
+    z-index: -1;
 }
 
 .landing1-video-container:hover {
@@ -161,10 +175,13 @@ img {
 
 .landings-about-container {
     margin-top: 7%;
+    margin-left: 0;
+    margin-right: 0;
     position: relative;
     width: 100%;
     height: 100%;
     top: 100%;
+    z-index: -1;
 }
 
 .landings-benefits-container {
@@ -173,6 +190,7 @@ img {
     width: 100%;
     height: 100%;
     top: 100%;
+    z-index: -1;
 }
 
 .container-about-us {
@@ -180,8 +198,8 @@ img {
     position: absolute;
     top: 0;
     width: 100%;
-    font-size: 18px;
-    width: 80%;
+    font-size: 15px;
+    width: 75%;
     margin-left: 0;
     margin-right: 0;
 }
@@ -193,7 +211,7 @@ img {
     position: absolute;
     top: 0;
     width: 100%;
-    font-size: 18px;
+    font-size: 15px;
     width: 80%;
     margin-top: 5%;
     margin-left: 0;
@@ -201,9 +219,22 @@ img {
     padding-bottom: 5%;
 }
 
+.container-fluid > .container-benefits {
+    left: 6%;
+    margin-top: 15%;
+}
+
+.container-fluid > .benefits-benefits > p:first-of-type {
+    color: red;
+
+}
+
+.about-us-header {
+    margin-top: 12%;
+}
+
 
 .container-fluid > .container-about-us {
-    left: 10%;
     display: block;
     font-stretch: 100%;
 }
@@ -222,6 +253,8 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+    background: rgba(197, 208, 212, 0.8);
+    z-index: 999;
 }
 
 .benefits1, .text-container {
@@ -231,17 +264,13 @@ img {
     
 }
 
-.container-fluid > .container-benefits {
-    left: 10%;
-    margin-top: 10%;
-}
-
 .landings-benefits-container {
-    background-image: url('../public/anoko_brunch_photo2.jpg');
     color: lightgrey;
+    background-image: url('../public/anoko_brunch_photo2.jpg');
     position: relative;
     z-index: -1;
 }
+
 
 .benefits-overlay {
     position: absolute;
@@ -252,11 +281,17 @@ img {
     background-color: rgba(54, 54, 54, 0.7);
 }
 
+.benefits-grid > .col-sm-6 {
+    margin-top: 10%;
+    width: 25%;
+    height: 25%;
+}
+
 .container-partner-gallery {
     text-align: center;
     position: absolute;
     left: 10%;
-    font-size: 18px;
+    font-size: 15px;
     width: 80%;
     margin-left: 0;
     margin-right: 0;
@@ -273,18 +308,81 @@ img {
 
 .landings-partners-gallery-container {
     position: relative;
+    margin: 0 auto;
     width: 100%;
     height: 100%;
     top: 100%;
-    background: rgba(197, 208, 212, 0.8);
     z-index: -1;
 }
 
 .container-partner-gallery > .col-lg-12 {
     margin-bottom: 10%;
+    
+}
+
+.landings-supermain-container > .container-fluid > .btn-outline {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    border: 1px solid white;
+    border-radius: 2px;
+    border-image-repeat: stretch;
+    display: inline-block;
+    z-index: 999;
+    background-color: transparent;
+    color: white;
+}
+
+.landings-supermain-container > .container-fluid {
+    z-index: -1;
+}
+
+.landings-supermain-container > .container-fluid > .btn-outline:hover {
+    background-color: #95AFB8;
+    border-color: #95AFB8;
+    color: black;
+}
+
+.carousel-container {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+.container-partnersImage-gallery {
+    margin-top: 5%;
+}
+
+.landings-membership-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    z-index: -1;
+    background-color: rgb(179, 215, 227);
+    margin-top: 10%
+}
+
+.container-membership {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.membership-header {
+    left: 18%;
+}
+
+.membership-row, .col-sm-3 {
+    margin-top: 5%;
 }
 
 
+
+ 
 
 
 

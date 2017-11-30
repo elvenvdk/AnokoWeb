@@ -13,3 +13,4 @@ export const LoLos = '../../public/LoLoSeafood.jpeg';
 export const LePoisson = '../../public/LePoissonRouge.jpg';
 export const bklynClay = '../../public/BKLYNClay.jpg';
 export const aceHotel = '../../public/AceHotel.jpg';
+export const anokoLogo = '../../public/anoko_logo.png';

@@ -6,10 +6,10 @@ import GalleryView from '../components/gallery_view';
 
 export const About = props => {
     return (
-        <div className="container">
+        <div className="container" id="about-container">
             <div className="row container-about-us">
                 <div className="col-lg-12">
-                    <div>
+                    <div className="about-us-header">
                         <h2>About Us</h2>
                     </div>
                     <div className="about-text-container">
@@ -46,7 +46,7 @@ export const About = props => {
 
 export const Benefits = () => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" id="benefits-container">
             <div className="row container-benefits">
                 <div className="col-lg-12">
                     <h2>The Benefits</h2>
@@ -56,35 +56,45 @@ export const Benefits = () => {
                         art ecosystem and a community of like-minded 
                         spirits. Membership is currently only available in New York City.
                     </p>
-                    <div className="benefits1 text-container">
-                        <h3>EXCLUSIVE</h3>
-                        <p>
-                            Enjoy exclusive membership 
-                            discounts and/or VIP access to art 
-                            events, classes, performances, 
-                            festivals, restaurants, hotels, etc.
-                        </p>    
-                    </div>
-                    <div className="benefits2 text-container">
-                        <h3>COMMUNITY</h3>
-                        <p>
-                            Meet diverse professionals who share 
-                            common passions and interests
-                        </p>    
-                    </div>
-                    <div className="benefits3 text-container">
-                        <h3>EVENTS</h3>
-                        <p>
-                            Attend curated events specially 
-                            tailored to your interests.
-                        </p>    
-                    </div>
-                    <div className="benefits4 text-container">
-                        <h3>ART ADVISORY</h3>
-                        <p>
-                            Start building or grow your fine art 
-                            collection with tips from our expert advisors.
-                        </p>    
+                    <div className="row benefits-grid">
+                        <div className="col-sm-6">
+                            <div className="benefits1 text-container">
+                                <h3>EXCLUSIVE</h3>
+                                <p>
+                                    Enjoy exclusive membership 
+                                    discounts and/or VIP access to art 
+                                    events, classes, performances, 
+                                    festivals, restaurants, hotels, etc.
+                                </p>    
+                            </div>
+                        </div>
+                        <div className="col-sm-6">
+                            <div className="benefits2 text-container">
+                                <h3>COMMUNITY</h3>
+                                <p>
+                                    Meet diverse professionals who share 
+                                    common passions and interests
+                                </p>    
+                            </div>
+                        </div>
+                        <div className="col-sm-6">
+                            <div className="benefits3 text-container">
+                                <h3>EVENTS</h3>
+                                <p>
+                                    Attend curated events specially 
+                                    tailored to your interests.
+                                </p>    
+                            </div>
+                        </div>
+                        <div className="col-sm-6">
+                            <div className="benefits4 text-container">
+                                <h3>ART ADVISORY</h3>
+                                <p>
+                                    Start building or grow your fine art 
+                                    collection with tips from our expert advisors.
+                                </p>    
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,4 +120,61 @@ export const Partners = () => {
         </div>
     )
     
+}
+
+export const Membership = () => {
+    return (
+        <div className="container-fluid">
+            <div className="row container-membership">
+                <div className="col-lg-12">
+                    <h2>HOW DOES ANOKO MEMBERSHIP WORK?</h2>
+                    <div className="row">
+                        <div className="col-md-8 membership-header">
+                            <p>
+                                Our full membership program will 
+                                open after our trial membership program 
+                                is complete, after December 31, 2017. 
+                                Currently, an ANOKO membership is 
+                                available at no cost through our 
+                                trial membership program.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row membership-row">
+                        <div className="col-sm-3">
+                            <h3>COMPLETE MEMBERSHIP APPLICATION</h3>
+                            <p>
+                                Our selection process is simple! 
+                                We look for people who share our core values and 
+                                seek growth through education and community.
+                            </p>
+                        </div>
+                        <div className="col-sm-3">
+                            <h3>PAY MEMBERSHIP FEE</h3>
+                            <p>There is an annual membership fee of $360 or $30 per month.</p>
+                        </div>
+                        <div className="col-sm-3">
+                            <h3>DOWNLOAD MEMBERSHIP CARD</h3>
+                            <p>
+                                You will receive a private link to download an ANOKO 
+                                digital membership pass, which gets stored in your Apple 
+                                or Android wallet.
+                            </p>
+                        </div>
+                        <div className="col-sm-3">
+                            <h3>GET ACCESS TO BENEFITS</h3>
+                            <p>
+                                Your digital membership card is constantly 
+                                updated as we add partners, upcoming events 
+                                and new deals. Flip your card over and “refresh” 
+                                the screen for updates. Present your 
+                                nique membership card at participating partners 
+                                for VIP access and deals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
 }

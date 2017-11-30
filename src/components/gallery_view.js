@@ -15,7 +15,7 @@ import {
 class GalleryView extends Component {
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid carousel-container">
                 <Carousel>
                     <Carousel.Item>
                         <img width={900} height={500} src={LoLos} />

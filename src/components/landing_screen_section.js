@@ -9,11 +9,13 @@ export const LandingScreenSection = props => {
                 <div className="landing-nav-container">
                     <NavbarMain 
                         labelL1="About"
-                        linkL1Ref="#"
+                        linkL1Ref="#about-container"
                         labelL2="Benefits"
-                        linkL2Ref="#"
+                        linkL2Ref="#benefits-container"
                         labelL3="Membership"
-                        linkL3Ref="#"
+                        linkL3Ref="#landings-membership"
+                        labelL4="Partners"
+                        linkL4Ref="#landings-partners-gallery"
                         labelR1="Become a Member"
                         linkLR1Ref="#"
                         labelR2="Log in"
