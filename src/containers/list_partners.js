@@ -13,7 +13,7 @@ import {
 import NavbarMain from '../components/common/navbar_main';
 import { PageHeader } from '../components/common/page_header';
 import { ThumbnailMenu } from '../components/thumbnail_menu';
-import ScreenSection from '../components/common/sreen_section';
+import ScreenSection from '../components/common/screen_section';
 import { 
     PreviewPicture,
     PreviewPictureMain 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { connect } from 'react-redux';
 
-import ScreenSection from '../components/common/sreen_section';
+import ScreenSection from '../components/common/screen_section';
 import { InputField } from '../components/common/input_field';
 import FileField from '../components/common/file_field';
 import { FileDropField } from '../components/common/file_drop_field';

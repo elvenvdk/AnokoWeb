@@ -17,8 +17,9 @@ export const LandingScreenSection = props => {
                         labelL4="Partners"
                         linkL4Ref="#landings-partners-gallery"
                         labelR1="Become a Member"
-                        linkLR1Ref="#"
+                        linkR1Ref="/member/new"
                         labelR2="Log in"
+                        linkR2Ref="#"
                     />
                 </div>
               {children}

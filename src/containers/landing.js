@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+
 import PartnersNew from './partners_new';
 import { Landings } from '../components/landings';
 import VideoScreen from '../components/video_screen';
@@ -16,7 +18,7 @@ class Landing extends Component {
     return (
       <LandingScreenSection sectionClassName="landings-supermain-container" id="landing-supermain">   
         <div className="container-fluid">
-          <button className="btn btn-outline btn-lg">JOIN ANOKO</button>    
+            <a href="/member/new" className="btn btn-outline btn-lg">JOIN ANOKO</a> 
           <VideoScreen />
         </div>
         <div className="container-fluid landings-about-container" id="landings-about">

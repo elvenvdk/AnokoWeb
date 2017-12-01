@@ -9,10 +9,7 @@ export const FormFooterButton = props => {
     return (
         <div className="d-flex justify-content-between">
             <Button bsStyle="primary" type="submit">{submitLabel}</Button>
-            <Button bsStyle="info" onClick={() => {
-                history.push(goToLink);
-                }}>{otherLabel}
-            </Button>
+            <a className="btn btn-info" href={goToLink}>{otherLabel}</a>
         </div>
     )
 }

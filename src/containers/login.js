@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Field, reduxForm } from 'redux-form';
 
-import { ScreenSection } from '../components/common/sreen_section';
+import { ScreenSection } from '../components/common/screen_section';
 import { InputField } from '../components/common/input_field';
 import { FormFooterButton } from '../components/common/form_footer_button';
 import { login, getPartner } from '../actions/partner_actions';

@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-router-dom';
 import {
     Button,
     Navbar,
@@ -9,6 +9,7 @@ import {
     NavDropdown,
     MenuItem
 } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 import { anokoLogo } from '../../images';
 
@@ -42,8 +43,8 @@ export const NavbarMain = props => {
               <div className="nav-rightSide">
                 <Nav>
                   <NavItem eventKey={1} href={linkR1Ref}>{labelR1}</NavItem>
-                <NavItem eventKey={2} href={linkR2Ref}>{labelR2}</NavItem>
-                <NavItem eventKey={3} href={linkR3Ref}>{labelR3}</NavItem>
+                  <NavItem eventKey={2} href={linkR2Ref}>{labelR2}</NavItem>
+                  <NavItem eventKey={3} href={linkR3Ref}>{labelR3}</NavItem>
                 </Nav>
               </div>
             </Navbar.Collapse>
