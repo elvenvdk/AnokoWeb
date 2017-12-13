@@ -22,7 +22,9 @@ class Landing extends Component {
           <VideoScreen />
         </div>
         <div className="container-fluid landings-about-container" id="landings-about">
-          <About />
+          <div className="about-overlay">
+            <About />
+          </div>
         </div>
         <div className="container-fluid landings-benefits-container" id="landings-benefits">
             <div className="benefits-overlay">

@@ -8,7 +8,7 @@ export const About = props => {
     return (
         <div className="container" id="about-container">
             <div className="row container-about-us">
-                <div className="col-lg-12">
+                <div className="col-lg-8">
                     <div className="about-us-header">
                         <h2>About Us</h2>
                     </div>
@@ -48,7 +48,7 @@ export const Benefits = () => {
     return (
         <div className="container-fluid" id="benefits-container">
             <div className="row container-benefits">
-                <div className="col-lg-12">
+                <div className="col-sm-4 col-md-4 col-lg-12">
                     <h2>The Benefits</h2>
                     <p>
                         Your membership with ANOKO 
@@ -57,7 +57,7 @@ export const Benefits = () => {
                         spirits. Membership is currently only available in New York City.
                     </p>
                     <div className="row benefits-grid">
-                        <div className="col-sm-6">
+                        <div className="col-xs-4 col-sm-6">
                             <div className="benefits1 text-container">
                                 <h3>EXCLUSIVE</h3>
                                 <p>
@@ -68,7 +68,7 @@ export const Benefits = () => {
                                 </p>    
                             </div>
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-xs-4 col-sm-6">
                             <div className="benefits2 text-container">
                                 <h3>COMMUNITY</h3>
                                 <p>
@@ -77,7 +77,7 @@ export const Benefits = () => {
                                 </p>    
                             </div>
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-xs-4 col-sm-6">
                             <div className="benefits3 text-container">
                                 <h3>EVENTS</h3>
                                 <p>
@@ -86,7 +86,7 @@ export const Benefits = () => {
                                 </p>    
                             </div>
                         </div>
-                        <div className="col-sm-6">
+                        <div className="col-xs-4 col-sm-6">
                             <div className="benefits4 text-container">
                                 <h3>ART ADVISORY</h3>
                                 <p>
@@ -109,7 +109,7 @@ export const Partners = () => {
                 <div className="col-lg-12">
                     <h2>Partners</h2>
                     <div className="partner-join-btn-container">
-                        <button className="btn btn-default partner-join-btn">Partner with Us</button>
+                        <a href="/partners/new" className="btn btn-default partner-join-btn">Partner with Us</a>
                     </div>
                     <p>Art Classes | Arts & Culture | Restaurants | Performances | Hotels | Nightlife</p>
                     <br />

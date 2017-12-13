@@ -14,3 +14,4 @@ export const LePoisson = '../../public/LePoissonRouge.jpg';
 export const bklynClay = '../../public/BKLYNClay.jpg';
 export const aceHotel = '../../public/AceHotel.jpg';
 export const anokoLogo = '../../public/anoko_logo.png';
+export const doSomethingGreat = '../../public/clark-tibbs-367075.jpg'

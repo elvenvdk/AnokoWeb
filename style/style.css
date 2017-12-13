@@ -12,7 +12,7 @@ body {
 
 .navbar {
     width: 100%;
-    z-index: 999;
+    z-index: 1;
 }
 
 img {
@@ -61,22 +61,6 @@ img {
 .screen-header > .card-text {
     font-size: 20px;
 }
-
-/* .thumbMenu {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0% auto;
-    position: relative;
-} */
-
-/* .thumbMenuContainer {
-    width: 640px; 
-    height: auto;
-    margin: 0 auto;
-    padding-top: 10px;
-    position: relative;
-} */
 
 .img-thumbnail {
     width: 100%;
@@ -165,16 +149,8 @@ img {
     z-index: -1;
 }
 
-/* .arrow_down {
-    position: absolute;
-    right: 2%;
-    bottom: 1%;
-    height: 60px;
-    width: 60px;
-} */
-
 .landings-about-container {
-    margin-top: 7%;
+    /* margin-top: 7%; */
     margin-left: 0;
     margin-right: 0;
     position: relative;
@@ -182,28 +158,64 @@ img {
     height: 100%;
     top: 100%;
     z-index: -1;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    background-image: url('../public/clark-tibbs-367075.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% top;
+    background-attachment: fixed;
+    color: lightgrey;
 }
 
 .landings-benefits-container {
-    margin-top: 10%;
+    /* margin-top: 10%; */
     position: relative;
     width: 100%;
     height: 100%;
     top: 100%;
     z-index: -1;
+    color: lightgrey;
+    background-image: url('../public/anoko_brunch_photo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% top;
 }
 
 .container-about-us {
     text-align: center;
     position: absolute;
     top: 0;
+    right: 0;
     width: 100%;
-    font-size: 15px;
-    width: 75%;
+    font-size: 18px;
     margin-left: 0;
     margin-right: 0;
+    flex-direction: row;
 }
 
+.container-about-us > .col-lg-8 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+}
+
+.container-benefits > .col-lg-12 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+}
 
 
 .container-benefits {
@@ -211,7 +223,7 @@ img {
     position: absolute;
     top: 0;
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
     width: 80%;
     margin-top: 5%;
     margin-left: 0;
@@ -264,13 +276,6 @@ img {
     
 }
 
-.landings-benefits-container {
-    color: lightgrey;
-    background-image: url('../public/anoko_brunch_photo2.jpg');
-    position: relative;
-    z-index: -1;
-}
-
 
 .benefits-overlay {
     position: absolute;
@@ -279,6 +284,15 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(54, 54, 54, 0.7);
+}
+
+.about-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.7);
 }
 
 .benefits-grid > .col-sm-6 {
@@ -328,7 +342,7 @@ img {
     border-radius: 2px;
     border-image-repeat: stretch;
     display: inline-block;
-    z-index: 999;
+    z-index: 9999;
     background-color: transparent;
     color: white;
 }
