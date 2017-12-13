@@ -35,7 +35,9 @@ class Landing extends Component {
           <Partners />
         </div>
         <div className="container-fluid landings-membership-container" id="landings-membership">
-          <Membership />
+          <div className="membership-overlay">
+            <Membership />
+          </div>
         </div>
       </LandingScreenSection>
     );
