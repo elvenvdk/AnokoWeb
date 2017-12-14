@@ -9,7 +9,7 @@ import thunk from 'redux-thunk';
 import Landing from './containers/landing';
 import PartnersNew from './containers/partners_new';
 import MemberNew from './containers/member_new';
-import Discover from './containers/discover';
+import DiscoverPartners from './containers/discover_partners';
 import ListPartners from './containers/list_partners';
 import reducers from './reducers';
 
@@ -22,7 +22,7 @@ ReactDOM.render(
         <Switch>
           <Route path="/partners/new" component={PartnersNew} />
           <Route path="/member/new" component={MemberNew} />
-          <Route path="/discover" component={Discover} />
+          <Route path="/discover" component={DiscoverPartners} />
           <Route path="/" component={Landing} />
         </Switch>
       </div>

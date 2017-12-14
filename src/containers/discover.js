@@ -19,6 +19,9 @@ import {
 import {
     getDbPartners,
 } from '../actions/partner_actions';
+import {
+    luisVaz
+} from '../images'
 
 class Discover extends Component {
     state = { partner: '' };
@@ -85,7 +88,7 @@ class Discover extends Component {
                     <PageHeader 
                         title="Discover" 
                         blurb="Anoko Partners and all they have to offer!"
-                        backgroundImage={imgHeader}
+                        backgroundImage={luisVaz}
                     />
                 </div>
                 <div className="container featured-container">
