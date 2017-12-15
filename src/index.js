@@ -18,7 +18,7 @@ const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
-      <div>
+      <div className="router-container">
         <Switch>
           <Route path="/partners/new" component={PartnersNew} />
           <Route path="/member/new" component={MemberNew} />
@@ -28,4 +28,4 @@ ReactDOM.render(
       </div>
     </BrowserRouter>
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('.app-container'));
