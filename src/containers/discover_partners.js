@@ -19,7 +19,18 @@ class DiscoverPartners extends Component {
                     linkR3Ref="#"
                 />
                 <ScreenSearchLayout 
-                    
+                    thumbName1="SHOWS"
+                    linkName1="/shows"
+                    thumbName2="TASTINGS"
+                    linkName2="/tastings"
+                    thumbName3="RESTAURANTS"
+                    linkName3="/restaurants"
+                    thumbName4="VENUES"
+                    linkName4="/venues"
+                    thumbName5="CLASS WORKSHOP"
+                    linkName5="/workshops"
+                    thumbName6="CREATIVE BRANDS"
+                    linkName6="/creative-brands"
                 />
             </div>
         )

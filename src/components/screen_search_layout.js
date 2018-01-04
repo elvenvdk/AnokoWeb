@@ -1,16 +1,14 @@
 import React from 'react';
+import { BrowserRouter, Link } from 'react-router-dom';
+import { SideFilter } from './side_filter';
 
 export const ScreenSearchLayout = props => {
     const {
         headerFirstLine, headerSecondLine,
-        sideFilterLabel1, sideFilterLabel2,
-        sideFilterLabel3, sideFilterLabel4,
-        sideFilterLabel5, sideFilterLabel6,
-        sideFilterLabel7, sideFilterLabel8,
-        sideFilterLabel9, sideFilterLabel10,
-        sideFilterLabel11, 
         thumbName1, thumbName2, thumbName3,
-        thumbName4, thumbName5, thumbName6
+        thumbName4, thumbName5, thumbName6,
+        linkName1, linkName2, linkName3,
+        linkName4, linkName5, linkName6
     } = props;
     return (
         <div>
@@ -39,37 +37,49 @@ export const ScreenSearchLayout = props => {
                                 label11="Select All"
                             />
                         </div>
-                        <div className="row">                            
-                            <div className="col-sm-4 col-md-3 shows-thumb discover-thumbs">
-                                <div className="shows-thumb-overlay thumbs-overlay">
-                                    <h4 className="discover-thumbs-label">SHOWS</h4>
+                        <div className="row">
+                            <Link to={linkName1}>                           
+                                <div className="col-sm-4 col-md-3 shows-thumb discover-thumbs">
+                                    <div className="shows-thumb-overlay thumbs-overlay">
+                                        <h4 className="discover-thumbs-label">{thumbName1}</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-sm-4 col-md-3 tastings-thumb discover-thumbs">
-                                <div className="tastings-thumb-overlay thumbs-overlay">
-                                    <h4 className="discover-thumbs-label">TASTINGS</h4>
+                            </Link>
+                            <Link to={linkName2}>
+                                <div className="col-sm-4 col-md-3 tastings-thumb discover-thumbs">
+                                    <div className="tastings-thumb-overlay thumbs-overlay">
+                                        <h4 className="discover-thumbs-label">{thumbName2}</h4>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
+                            <Link to={linkName3}>
                             <div className="col-sm-4 col-md-3 restaurants-thumb discover-thumbs">
                                 <div className="restaurants-thumb-overlay thumbs-overlay">
-                                    <h4 className="discover-thumbs-label">RESTAURANTS</h4>
+                                    <h4 className="discover-thumbs-label">{thumbName3}</h4>
                                 </div>
                             </div>
-                            <div className="col-sm-4 col-md-3 venues-thumb discover-thumbs">
-                                <div className="venues-thumb-overlay thumbs-overlay">
-                                    <h4 className="discover-thumbs-label">VENUES</h4>
+                            </Link>
+                            <Link to={linkName4}>
+                                <div className="col-sm-4 col-md-3 venues-thumb discover-thumbs">
+                                    <div className="venues-thumb-overlay thumbs-overlay">
+                                        <h4 className="discover-thumbs-label">{thumbName4}</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-sm-4 col-md-3 workshop-thumb discover-thumbs">
-                                <div className="workshop-thumb-overlay thumbs-overlay">
-                                    <h4 className="discover-thumbs-label">CLASS WORKSHOP</h4>
+                            </Link>
+                            <Link to={linkName5}>
+                                <div className="col-sm-4 col-md-3 workshop-thumb discover-thumbs">
+                                    <div className="workshop-thumb-overlay thumbs-overlay">
+                                        <h4 className="discover-thumbs-label">{thumbName5}</h4>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-sm-4 col-md-3 creative-brands-thumb discover-thumbs">
-                                <div className="creative-brands-thumb-overlay thumbs-overlay">
-                                    <h4 className="discover-thumbs-label">CREATIVE BRANDS</h4>
+                            </Link>
+                            <Link to={linkName6}>
+                                <div className="col-sm-4 col-md-3 creative-brands-thumb discover-thumbs">
+                                    <div className="creative-brands-thumb-overlay thumbs-overlay">
+                                        <h4 className="discover-thumbs-label">{thumbName6}</h4>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
